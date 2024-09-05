@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import { Personas } from './Personas';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <h1 className="app-title">Listado de Personas</h1>
+      <ul className="person-list">
+        {Personas.map((Persona, index) => (
+          <li key={index} className="person-item">
+            <a target="_blank" rel="noopener noreferrer" className="person-link">
+              {Persona.nombre}
+            </a>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
