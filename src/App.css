@@ -1,4 +1,4 @@
-/* Estilo global para la aplicación */
+/* App.css */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,47 +6,93 @@ body {
   background-color: #f4f4f4;
 }
 
-/* Estilo para el contenedor principal de la aplicación */
 .app-container {
   text-align: center;
-  margin: 0 auto;
   padding: 20px;
-  max-width: 800px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Ampliado para un diseño más espacioso */
+  margin: 20px auto; /* Añadido margen superior e inferior */
+  border: 1px solid #ddd;
   border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para el encabezado */
-.app-title {
-  color: #333;
-  margin-bottom: 20px;
-}
-
-/* Estilo para la lista desordenada */
 .person-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-/* Estilo para los elementos de la lista */
 .person-item {
   padding: 10px;
   margin: 10px 0;
-  background-color: #f9f9f9;
+  background-color: #ffffff; /* Ajustado para consistencia */
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
 
-/* Estilo para los enlaces de las personas */
 .person-link {
   text-decoration: none;
   color: #007bff;
   font-weight: bold;
 }
 
-/* Estilo para el efecto hover en los elementos de la lista */
 .person-item:hover {
   background-color: #e9ecef;
+}
+
+.app-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.persona-details {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.persona-details p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.persona-details strong {
+  color: #555;
+}
+
+/* Navbar.css */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añadido para darle un poco de profundidad */
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-links li {
+  margin: 0;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px; /* Añadido para mejorar la usabilidad */
+  border-radius: 4px; /* Añadido para un estilo de botón más suave */
+}
+
+.navbar-links a:hover {
+  background-color: #555; /* Añadido para un efecto visual en el hover */
+  text-decoration: none;
 }
