@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 
 function App() {
   return (
-    <div className="app-container">
+    <div className="app-container-">
       <Navbar/>
       <h1 className="app-title">Listado de Personas</h1>
       <ul className="person-list">

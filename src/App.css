@@ -6,6 +6,48 @@ body {
   background-color: #f4f4f4;
 }
 
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Individual statistic item */
+.stat-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Stat value styling */
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* List styling for multiple persons */
+.stat-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stat-list-item {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.stat-list-item:last-child {
+  border-bottom: none;
+}
 .app-container {
   text-align: center;
   padding: 20px;
@@ -50,6 +92,7 @@ body {
 .persona-details {
   background-color: #fff;
   padding: 20px;
+  padding: 0%;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
@@ -95,4 +138,15 @@ body {
 .navbar-links a:hover {
   background-color: #555; /* Añadido para un efecto visual en el hover */
   text-decoration: none;
+}
+.app-container- {
+  text-align: center;
+  padding: 20px;
+  max-width: 800px; /* Ampliado para un diseño más espacioso */
+  margin: 20px auto; /* Añadido margen superior e inferior */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 28.33%;
 }
