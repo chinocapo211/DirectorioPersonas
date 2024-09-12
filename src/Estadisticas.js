@@ -26,7 +26,7 @@ function Estadisticas() {
                     <h2>Personas de Edad Máxima ({edadMaxima} años):</h2>
                     <ul className="stat-list">
                         {personasConEdadMax.map(persona => (
-                            <li key={persona.nombre} className="stat-list-item">
+                            <li key={persona.nombre} className="stat-value">
                                 {persona.nombre}
                             </li>
                         ))}
@@ -36,7 +36,7 @@ function Estadisticas() {
                     <h2>Personas de Edad Mínima ({edadMinima} años):</h2>
                     <ul className="stat-list">
                         {personasConEdadMin.map(persona => (
-                            <li key={persona.nombre} className="stat-list-item">
+                            <li key={persona.nombre} className="stat-value">
                                 {persona.nombre}
                             </li>
                         ))}
